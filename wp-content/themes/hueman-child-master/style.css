@@ -1,0 +1,228 @@
+/*
+	Theme Name: Hueman Child
+	Theme URI: http://alxmedia.se/themes/hueman/
+	Description: Sample child theme for customization.
+	Author: You
+	Author URI: 
+	Template: hueman
+	Version: 1.0.0
+*/
+
+@import url("../hueman/style.css");
+
+/* ------------------------------------------------------------------------- *
+ *  Theme customization starts here
+/* ------------------------------------------------------------------------- */
+
+/* Global */
+.mystyle {}
+.small_logo {
+	width: 75px;
+	height: 75px;
+	padding-top: 15px;
+}
+.index_logo {
+	padding-top: 10px;
+	paddin-bottom: 10px;
+}
+.logo_text {
+	margin-left: auto;
+	margin-right: auto; 
+	text-align: center;
+	color: #fff; 
+	color: rgba(255,255,255,0.8); 
+	font-size: 20px; 
+	font-weight: 600; 
+	text-transform: uppercase; 
+	line-height: 24px; 
+	padding-top: 4px; 
+	padding-bottom: 15px;
+}
+.button { background: #3a5706; color: #fff; padding: 8px 14px; font-weight: 600; display: inline-block; border: none; cursor: pointer; -webkit-border-radius: 3px; border-radius: 3px; }
+.button { -moz-appearance: none; -webkit-appearance: none; -moz-transition: all .2s ease; -webkit-transition: all .2s ease; transition: all .2s ease; }
+.button:hover { background: #f27b0f; }
+
+/* Tablet - 800px, 768px & 720px */
+@media only screen and (min-width: 720px) and (max-width: 800px) {
+	.mystyle {}
+
+}
+
+
+/* Mobile - 480px & 320px */
+@media only screen and (max-width: 719px) {
+	.mystyle {}
+.small_logo { display: none;}
+}
+position: relative; 
+
+/* Mobile - 320px */
+@media only screen and (max-width: 479px) {
+.small_logo { display: none;}
+	.mystyle {}
+}
+.post-thumbnail { display: none;}
+.wiki-bar {background-color:#3a5706; color:#fff; border-bottom: 1px solid #3a5706;}
+.appcenter-bar {background-color:#f27b0f; color:#fff; border-bottom: 1px solid #f27b0f;}
+.appcenter-bar H2 {color:#fff;}
+
+.wiki-bar a, .appcenter-bar a, .donations-bar a {color:#fff;}
+
+/* Search form */
+
+/*the form div*/
+#uwpqsf_id{border:0px;}
+/*Form title*/
+.uform_title{text-align:center;margin:auto 0 auto 0}
+.uwpqsf_class{width:100%;margin-bottom:5px;clear:both}
+/*label for each field*/
+.uwpqsf_class > span[class*='taxolabel-'], .uwpqsf_class > span[class*='cmflabel-']{float:left;padding:5px;clear:both;width:100%;font-weight:normal!important;}
+/*dropdown*/
+.uwpqsf_class select {width:150px;margin-left:1%;margin-right:auto;}
+
+/*taxonomy and meta field radio OPTIONS*/
+.uwpqsf_class > label{float:left;width:100%;}
+/*Checkboxes*/
+[class*='tax-check-'] label,[class*='cmf-check-'] label {float:left;width:50%;}
+
+/*search button*/
+/*.uwpqsf_submit{text-align:center;margin-bottom:15px;}*/
+/*keyword search label*/
+.uwpqsf_class-keyword{padding:0px!important;}
+/*text input for keyword*/
+/*text input for keyword*/
+input#uwpqsf_id_key{width:97%;margin-left:1%;margin-right:1%}
+
+
+/*Pagination*/
+.uwpqsfpagi{text-align:center;margin-top:15px;margin-bottom:15px;clear:both;width:100%}
+
+a.upagievent{padding-left: 12px; padding-right: 12px; height: 25px; line-height: 25px; display: inline-block; 
+        text-align: center; 
+        }
+span.upagicurrent{padding-left: 12px; padding-right: 12px; height: 25px; line-height: 25px; display: inline-block; 
+        text-align: center;color:#000}
+
+
+
+.custom-archive .post-meta {display: none;}
+.custom-archive .excerpt {display: none;}
+.custom-archive a {color:#3a5706;}
+
+.usfbtn { border: none!important;}
+
+select, .btn, .usearchbtn, .usfbtn, input#uwpqsf_id_key {	
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright:5px;
+	-moz-border-radius-bottomright:0px;
+	-moz-border-radius-bottomright:5px;
+	-webkit-border-top-left-radius:5px;
+	-webkit-border-top-right-radius:5px;
+	-webkit-border-bottom-left-radius:0px;
+	-webkit-border-bottom-right-radius:5px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:5px;
+}
+.btn,.usfbtn, .usearchbtn {
+	-moz-box-shadow: 0px 1px 2px #aaa; /* Firefox */
+	-webkit-box-shadow: 0px 1px 2px #aaa; /* Safari, Chrome */
+	box-shadow: 0px 1px 2px #aaa; /* CSS3 */
+	background-color:#f27b0f;
+	color:#fff;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, .8);
+	padding:5px;
+}
+.btn:hover, .usearchbtn:hover, .usfbtn:hover { 	-moz-box-shadow: 0px 1px 2px #eee; /* Firefox */
+	-webkit-box-shadow: 0px 1px 2px #eee; /* Safari, Chrome */
+	box-shadow: 0px 1px 2px #eee; /* CSS3 */
+}
+
+.usearchbtn, .usfbtn {margin-top: 20px;}
+
+select, input#uwpqsf_id_key {
+   margin-top: 5px;
+   margin-bottom:5px;
+   background: transparent;
+   display: inline-block;
+   font-size: 16px;
+   border: 1px solid #3a5706!important;
+   height: 34px;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   color:#000;
+} 
+
+*:focus {
+    outline: 0;
+}
+.uwpqsf_class, label { font-size: 14px!important; margin-left:5px; padding-left: 0px; font-weight:normal!important;}
+
+.has-quantity {
+    list-style: outside none none!important;
+}
+.uwpqsfpagi {display: none;}
+
+/* Donations */
+
+.donations-bar {background-color: #b1c75c; border-bottom: 1px solid #b1c75c; }
+.donation {
+    width: 80%;
+    padding: 10px;
+    padding-left: 0px;
+}
+.donor_name {
+    width: 80%;
+    float: left;
+}
+.donor_value {
+    margin-left: 80%;
+    color: #ff6600;
+    font-weight: bold; 
+}
+.donation_header {margin-bottom: 0px!important;}
+
+@media only screen and (min-width: 1025px) {
+	/* fixed nav */
+	.full-width.topbar-enabled #header { padding-top: 50px; }
+	.full-width #nav-topbar.nav-container { position: fixed; top: 0; left: 0; right: 0; width: 100%; z-index: 999; }
+	.full-width.admin-bar #nav-topbar.nav-container { top: 32px; }
+}
+
+@media only screen and (min-width: 720px) {
+#nav-topbar { position: fixed; top: 0; left: 0; right: 0; width: 100%; z-index: 999; }
+	.full-width.topbar-enabled #header { padding-top: 50px; }
+	.full-width #nav-topbar.nav-container { position: fixed; top: 0; left: 0; right: 0; width: 100%; z-index: 999; }
+	.full-width.admin-bar #nav-topbar.nav-container { top: 32px; }
+}
+@media only screen and (max-width: 719px) {
+	.full-width.topbar-enabled #header { padding-top: 50px; }
+	.full-width #nav-topbar.nav-container { position: fixed; top: 0; left: 0; right: 0; width: 100%; z-index: 999; }
+	.full-width.admin-bar #nav-topbar.nav-container { top: 46px; position: fixed }
+	#wpadminbar {position: fixed;}
+	
+}
+
+.display-pages-listing { margin-left: 0px!important;}
+.display-pages-listing li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.display-pages-listing li h2 {
+   font-size: 100%;
+}
+.anchor{
+   display:block;
+   height:85px; /* this is the height of your header */
+   margin-top:-85px; /* this is again negative value of the height of your header */
+   visibility:hidden;
+}
+.post-row { border-bottom: 0px solid; }
+.featured { margin-bottom: 30px;}
+.featured h2 { font-size: 22px!important;}
+
+/* test */
